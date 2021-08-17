@@ -4,14 +4,17 @@ var app = new Vue({
   <div class="pl-3">
     <top-bar />
     <div class="container mx-auto">
-      <apresentation />
+      <apresentation v-on:show-page="showPage=true;" />
+      <div v-if="showPage">
       <about-me />
       <search v-on:change="search" />
       <group v-for="(group, index) in groups" :key="'group' + index" :group="group" />
+      </div>
     </div>
   </div>
   `,
   data: {
+    showPage: false,
     groups: [],
     groupsOriginal: [
       {
@@ -221,8 +224,6 @@ var app = new Vue({
   },
   methods: {
     search (text) {
-      console.log('search', text)
-
       this.groups.map((group, idxG) => {
         group.lists.map((list, idxL) => {
           list.items.map((item, idxI) => {
