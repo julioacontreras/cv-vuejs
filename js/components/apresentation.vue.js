@@ -4,23 +4,10 @@ Vue.component('apresentation', {
     <div class="leading-8" id="ap_txt2"> </div>
     <div class="leading-8" id="ap_txt3"> </div>
   </div>`,
-  data () {
-    return {
-      text: '',
-      enjoy: 'enjoy! 🌝',
-      enjoy2: 'enjoy! 😋'
-    }
-  },
   mounted () {
     this.startPresentation();
   },
   methods: {
-    mouseover() {
-      this.text = this.enjoy2
-    },
-    mouseleave() {
-      this.text = this.enjoy      
-    },
     text1() {
       const self = this
       const options = {
