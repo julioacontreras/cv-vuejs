@@ -1,7 +1,7 @@
 Vue.component('about-me', {
   template: `
   <div class="pt-2">
-    <p class="text-disable">-------------------------------------------------------------------</p>
+    <p class="line"></p>
     <p> # About me: </p>
     <div class="pl-3">
       <p> Programming more than 10 years in a lot techonologies.  </p>

@@ -89,11 +89,6 @@ input {
   border-bottom-width: 2px;
 }
 
-.container {
-  width: 100%;
-  max-width: 640px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -105,6 +100,20 @@ input {
 
 .w-full	{
   width: 100%;
+}
+
+.container	{
+  width: 100%;
+}
+
+.line {
+  border-bottom: 3px dotted var(--quaternary);
+}
+
+@media screen and (min-width: 569px) {
+  .container	{
+    width: 600px;
+  }
 }
 
 .inline {

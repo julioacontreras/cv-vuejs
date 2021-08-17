@@ -3,10 +3,12 @@ var app = new Vue({
   template: `
   <div class="pl-3">
     <top-bar />
-    <apresentation />
-    <about-me />
-    <search v-on:change="search" />
-    <group v-for="(group, index) in groups" :key="'group' + index" :group="group" />
+    <div class="container mx-auto">
+      <apresentation />
+      <about-me />
+      <search v-on:change="search" />
+      <group v-for="(group, index) in groups" :key="'group' + index" :group="group" />
+    </div>
   </div>
   `,
   data: {
