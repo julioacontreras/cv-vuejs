@@ -9,6 +9,10 @@
   --quaternary: #636363;
 }
 
+.no-underline	{
+  text-decoration: none;
+}
+
 .leading-8	{
   line-height: 2rem;
 }
@@ -48,6 +52,10 @@ body {
 
 .pl-1	{
   padding-left: 0.25rem;
+}
+
+.pt-1	{
+  padding-top: 0.25rem;
 }
 
 .pl-3 {
