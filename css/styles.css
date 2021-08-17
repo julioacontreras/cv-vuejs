@@ -1,0 +1,120 @@
+.flex {
+  display: flex;
+}
+
+.light {
+  --primary: white;
+  --secondary: black;
+  --ternary: rgb(94, 94, 12);
+  --quaternary: #636363;
+}
+
+.leading-8	{
+  line-height: 2rem;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.dark {
+  --primary: #2D3135;
+  --secondary: white;
+  --ternary: yellow;
+  --quaternary: #636363;
+}
+
+a {
+  color: var(--secondary);
+}
+
+.text-disable {
+  color: var(--quaternary);
+}
+
+body {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.title {
+  color: var(--ternary);
+}
+
+.site {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.pl-1	{
+  padding-left: 0.25rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.px-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+input {
+  background-color: transparent;
+  color: var(--secondary);
+  font-family: monospace;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: 640px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-12	{
+  width: 3rem;
+}
+
+.w-full	{
+  width: 100%;
+}
+
+.inline {
+  display: inline;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
