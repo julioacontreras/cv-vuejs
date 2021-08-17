@@ -54,6 +54,11 @@ body {
   padding-left: 0.75rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -126,4 +131,22 @@ input {
 
 .relative {
   position: relative;
+}
+
+.grid-columns-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+}
+
+.grid-full-3 {
+  grid-column: 1/4;
+}
+
+.grid-columns-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+}
+
+.grid-full-2 {
+  grid-column: 1/3;
 }

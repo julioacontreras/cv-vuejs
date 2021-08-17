@@ -1,7 +1,7 @@
 var app = new Vue({
   el: '#app',
   template: `
-  <div class="pl-3">
+  <div>
     <top-bar />
     <div class="container mx-auto">
       <apresentation v-on:show-page="showPage=true;" />
@@ -22,6 +22,8 @@ var app = new Vue({
         lists: [
           {
             title: '',
+            classes: '',
+            classesTitle: '',
             items: [
               { title: '▪ Autodidact.', visible: true },
               { title: '▪ Proactive.', visible: true },
@@ -33,43 +35,9 @@ var app = new Vue({
       },
       {
         title: '💪 Skills:',
+        classes: 'grid-columns-3',
+        classesTitle: 'grid-full-3',
         lists: [
-          {
-            title: '# Project management:',
-            items: [
-              { title: '✔ Scrum', visible: true },
-              { title: '✔ Extreme Programming', visible: true }
-            ]
-          },
-          {
-            title: '# Managment tools:',
-            items: [
-              { title: '✔ Taiga', visible: true },
-              { title: '✔ Jira', visible: true },
-              { title: '✔ Trello', visible: true },
-              { title: '✔ Google Drive', visible: true },
-              { title: '✔ Slack', visible: true },
-              { title: '✔ Discord', visible: true },
-              { title: '■ Dropbox', visible: true },
-            ]            
-          },
-          {
-            title: '# Language programming:',
-            items: [
-              { title: '■ Basic', visible: true },
-              { title: '■ Pascal', visible: true },
-              { title: '■ C', visible: true },
-              { title: '■ C++', visible: true },
-              { title: '■ JAVA', visible: true },
-            ]
-          },
-          {
-            title: '# Bots:',
-            items: [
-              { title: '✔ Telegram', visible: true },
-              { title: '✔ Instagram', visible: true },
-            ]
-          },
           {
             title: '# Scripts:',
             items: [
@@ -119,12 +87,41 @@ var app = new Vue({
             ]
           },
           {
+            title: '# Languages:',
+            items: [
+              { title: '■ Basic', visible: true },
+              { title: '■ Pascal', visible: true },
+              { title: '■ C', visible: true },
+              { title: '■ C++', visible: true },
+              { title: '■ JAVA', visible: true },
+            ]
+          },
+          {
+            title: '# Managment tools:',
+            items: [
+              { title: '✔ Taiga', visible: true },
+              { title: '✔ Jira', visible: true },
+              { title: '✔ Trello', visible: true },
+              { title: '✔ Google Drive', visible: true },
+              { title: '✔ Slack', visible: true },
+              { title: '✔ Discord', visible: true },
+              { title: '■ Dropbox', visible: true },
+            ]            
+          },          
+          {
+            title: '# Project management:',
+            items: [
+              { title: '✔ Scrum', visible: true },
+              { title: '✔ Extreme Programming', visible: true }
+            ]
+          },
+          {
             title: '# Bots:',
             items: [
               { title: '✔ Telegram', visible: true },
               { title: '✔ Instagram', visible: true },
             ]
-          },
+          },          
           {
             title: '# Programming tools:',
             items: [
@@ -178,20 +175,30 @@ var app = new Vue({
               { title: '■ Krita', visible: true },
               { title: '■ Blender', visible: true },
             ]
-          },
+          }
+        ]
+      },
+      {
+        title: '💪 Languages:',
+        classes: '',
+        classesTitle: '',
+        lists: [
           {
-            title: '# Languages:',
+            title: '',
             items: [
               { title: '✔ Fluent Spanish (read, write and speak)', visible: true },
               { title: '✔ English (read, write and speak)', visible: true },
               { title: '✔ Portuguese Brazil (read, write and speak)', visible: true },
               { title: '✔ Italian (just bad words)', visible: true },
             ]
-          },   
+          }
         ]
       },
+
       {
         title: '💪 Experience:',
+        classes: 'grid-columns-2',
+        classesTitle: 'grid-full-2',
         lists: [
           {
             title: '# Brazil',

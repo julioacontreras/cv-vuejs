@@ -1,11 +1,13 @@
 Vue.component('group', {
   props: [
-    'group'
+    'group',
+    'classes',
+    'classesTitle'
   ],
   template: `
-  <div group>
-  <p class="line"></p>
-  <p class="pb-2"> {{ group.title }} </p>
+  <div group :class="group.classes">
+    <p class="line" :class="group.classesTitle"></p>
+    <p class="pb-2" :class="group.classesTitle"> {{ group.title }} </p>
     <list v-for="(list, index) in group.lists" :key="'list' + index" :list="list" />
   </div>`
 })
