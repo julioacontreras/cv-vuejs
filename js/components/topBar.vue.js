@@ -5,6 +5,11 @@ Vue.component('top-bar', {
       <a href="javascript:void()" aria-label="Day theme" v-if="!changeForDay" class="pr-2 no-underline cursor-pointer" v-on:click="day"> ☀️ </a>
       <a href="javascript:void()" aria-label="Night theme" v-if="changeForDay" class="pr-2 no-underline cursor-pointer" v-on:click="night"> 🌑 </a>
       <a
+        href="https://github.com/julioacontreras"
+        target="_blank"
+        class="pt-1 pr-2"
+      > Github </a>
+      <a
         href="https://www.linkedin.com/in/julio-contreras-6579b623/?originalSubdomain=es"
         target="_blank"
         class="pt-1"

@@ -10,6 +10,7 @@ var app = new Vue({
       <search v-on:change="search" />
       <group v-for="(group, index) in groups" :key="'group' + index" :group="group" />
       </div>
+      <footer-bar v-if="showPage" />
     </div>
   </div>
   `,
